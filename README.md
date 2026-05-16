@@ -38,7 +38,7 @@ cd chat-room
 
 ### 2\. 配置 API Key
 
-编辑 `api\_key\.txt`，填入你的 DeepSeek API Key：
+编辑 `api_key.txt`，填入你的 DeepSeek API Key：
 
 ```Plain Text
 sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -46,9 +46,9 @@ sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 可选配置：
 
-- 自定义机器人人设：编辑 `prompt\.txt`
+- 自定义机器人人设：编辑 `prompt.txt`
 
-- 切换模型版本：将 `model\.txt` 内容修改为 `deepseek\-v4\-pro`
+- 切换模型版本：将 `model.txt` 内容修改为 `deepseek-v4-pro`
 
 ### 3\. 一键启动服务
 
@@ -67,13 +67,13 @@ http://服务器公网IP:8080
 
 | 文件名称        | 用途              | 默认值                                                    |
 | --------------- | ----------------- | --------------------------------------------------------- |
-| `api\_key\.txt` | DeepSeek API 密钥 | 无（必填项）                                              |
-| `prompt\.txt`   | 机器人系统提示词  | 你是一个友好、幽默的聊天助手，请用简短的中文回复。        |
-| `model\.txt`    | 大模型名称        | `deepseek\-v4\-flash`（低成本），可选 `deepseek\-v4\-pro` |
+| `api_key.txt` | DeepSeek API 密钥 | 无（必填项）                                              |
+| `prompt.txt`   | 机器人系统提示词  | 你是一个友好、幽默的聊天助手，请用简短的中文回复。        |
+| `model.txt`    | 大模型名称        | `deepseek-v4-flash`（低成本），可选 `deepseek-v4-pro` |
 
 ## 机器人成本控制
 
-- 默认最大回复 Token 数：`300`（可在 `app\.py` 中修改 `MAX\_BOT\_TOKENS` 参数）
+- 默认最大回复 Token 数：`300`（可在 `app.py` 中修改 `MAX_BOT_TOKENS` 参数）
 
 - 采用异步 API 调用，不阻塞用户消息收发
 
